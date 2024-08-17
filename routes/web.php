@@ -24,7 +24,7 @@ use Inertia\Inertia;
 //     return 'Hi, user';
 // })->middleware('role:user');
 
-Route::redirect('/', '/prototype/login');
+Route::redirect('/', '/login');
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
