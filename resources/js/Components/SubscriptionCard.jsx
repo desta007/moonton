@@ -1,6 +1,7 @@
 import PrimaryButton from "@/Components/PrimaryButton";
 
-export default function SubscriptionCard({ id, name, price, durationInMonth, features, isPremium, onSelectSubscription }) {
+export default function SubscriptionCard({
+        id, name, price, durationInMonth, features, isPremium, onSelectSubscription }) {
     return <>
                     {/* <!-- Basic --> */}
                     { !isPremium && (
@@ -77,11 +78,12 @@ export default function SubscriptionCard({ id, name, price, durationInMonth, fea
                         </div>
 
                         {/* <!-- Bottom: CTA Button --> */}
-                        <div>
-                            <a href="payment_status/success.html"
-                                className="rounded-2xl bg-alerange py-[13px] text-center grid">
-                                <span className="text-base font-semibold">Subscribe Now</span>
-                            </a>
+                        <div onClick={onSelectSubscription}>
+                            <PrimaryButton type="button">
+                                <span className="text-base font-semibold">
+                                    Subscribe Now
+                                </span>
+                            </PrimaryButton>
                         </div>
                     </div>
                     )}
