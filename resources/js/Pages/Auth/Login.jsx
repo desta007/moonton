@@ -93,6 +93,7 @@ export default function Login() {
                                 <PrimaryButton
                                     type="submit"
                                     variant="primary"
+                                    className="w-full"
                                     processing={processing}
                                 >
                                     <span className="text-base font-semibold">
@@ -103,6 +104,7 @@ export default function Login() {
                                     <PrimaryButton
                                         type="button"
                                         variant="light-outline"
+                                        className="w-full"
                                     >
                                         <span className="text-base text-white">
                                             Create New Account
