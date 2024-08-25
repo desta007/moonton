@@ -4,6 +4,7 @@ import FlashMessage from "@/Components/FlashMessage";
 import { Link, Head, useForm } from "@inertiajs/react";
 
 export default function Index({auth, flashMessage, movies}) {
+    const { delete: destroy, put } = useForm();
     return (
     <Authenticated auth={auth}>
         <Head title="List of Movie" />
