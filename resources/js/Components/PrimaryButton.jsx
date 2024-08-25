@@ -25,7 +25,7 @@ export default function PrimaryButton({
     return (
         <button
             type={type}
-            className={`rounded-2xl py-[13px] text-center w-full ${
+            className={`rounded-2xl py-[13px] text-center ${
                 processing ? "opacity-30" : ""
             } btn-${variant} ${className}`}
             disabled={processing}
