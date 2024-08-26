@@ -33,7 +33,7 @@ export default function SubscriptionCard({
                         {/* <!-- Bottom: CTA Button --> */}
                         <div onClick={onSelectSubscription}>
                             <PrimaryButton
-                                type="button" variant="white-outline">
+                                type="button" variant="white-outline" className="w-full">
                                 <span className="text-base">Start {name}</span>
                             </PrimaryButton>
                         </div>
@@ -79,7 +79,7 @@ export default function SubscriptionCard({
 
                         {/* <!-- Bottom: CTA Button --> */}
                         <div onClick={onSelectSubscription}>
-                            <PrimaryButton type="button">
+                            <PrimaryButton type="button" className="w-full">
                                 <span className="text-base font-semibold">
                                     Subscribe Now
                                 </span>
